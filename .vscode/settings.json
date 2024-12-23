@@ -1,0 +1,182 @@
+{
+    "editor.fontSize": 18,
+    "explorer.autoReveal": true ,
+    // to reload these settings do the followings
+    // > Cmake: Reset Extensions tools state
+    // > Reload window
+    // https://learn.microsoft.com/en-us/cpp/build/customize-cmake-settings?view=msvc-170
+    
+    "cmake.sourceDirectory": "${workspaceFolder}",
+    "cmake.loggingLevel": "trace",
+    "cmake.buildDirectory": "${workspaceFolder}/build-${buildType}",
+    "cmake.configureSettings": {
+        
+        "CMAKE_BUILD_TYPE": "RelWithDebInfo",
+        //"CMAKE_BUILD_TYPE": "Debug",
+        //"CMAKE_BUILD_TYPE": "Release",
+        //"CMAKE_BUILD_TYPE": "asan", // Address Sanitizer
+    },
+    "cmake.configureOnOpen": false,
+    "cmake.configureOnEdit": false,
+    "cmake.options.statusBarVisibility": "compact",
+    "cmake.options.advanced": {
+        "build": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "launch": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        },
+        "debug": {
+            "statusBarVisibility": "inherit",
+            "inheritDefault": "visible"
+        }
+    },
+    // https://github.com/microsoft/vscode-cmake-tools/blob/main/docs/cmake-settings.md
+    "editor.wordWrap": "on",
+    "editor.autoIndent": "full",
+    "workbench.editor.enablePreview": true,
+    "workbench.editor.enablePreviewFromQuickOpen": true,
+    "editor.minimap.enabled": true,
+    "editor.minimap.side": "right",
+    "output.smartScroll.enabled": true,
+    "C_Cpp.intelliSenseEngine": "default", //since we are using clang engine, other options are "Default" and "Tag Parser"
+    "terminal.integrated.windowsEnableConpty": true,
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "path": "%SystemRoot%\\system32\\WindowsPowerShell\\v1.0\\powershell.exe",
+            "source": "PowerShell",
+            "icon": "terminal-powershell"
+        },
+
+        "Command Prompt": {
+            "path": [
+                "${env:windir}\\Sysnative\\cmd.exe",
+                "${env:windir}\\System32\\cmd.exe"
+            ],
+            "args": [],
+            "icon": "terminal-cmd"
+        },
+        "Git Bash": {
+            "source": "Git Bash"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    //"terminal.integrated.defaultProfile.windows": "Command Prompt",
+    "gitlens.currentLine.enabled": true, // Extension gitlens
+    "gitlens.codeLens.authors.enabled": false,
+    "gitlens.codeLens.recentChange.enabled": false,
+    "files.associations": {
+        "pcoip*.txt": "log",
+        "iterator": "cpp",
+        "array": "cpp",
+        "atomic": "cpp",
+        "bit": "cpp",
+        "*.tcc": "cpp",
+        "cctype": "cpp",
+        "chrono": "cpp",
+        "clocale": "cpp",
+        "cmath": "cpp",
+        "condition_variable": "cpp",
+        "cstdarg": "cpp",
+        "cstddef": "cpp",
+        "cstdint": "cpp",
+        "cstdio": "cpp",
+        "cstdlib": "cpp",
+        "cstring": "cpp",
+        "ctime": "cpp",
+        "cwchar": "cpp",
+        "cwctype": "cpp",
+        "deque": "cpp",
+        "map": "cpp",
+        "set": "cpp",
+        "unordered_map": "cpp",
+        "vector": "cpp",
+        "exception": "cpp",
+        "fstream": "cpp",
+        "functional": "cpp",
+        "initializer_list": "cpp",
+        "iosfwd": "cpp",
+        "iostream": "cpp",
+        "istream": "cpp",
+        "limits": "cpp",
+        "memory": "cpp",
+        "mutex": "cpp",
+        "new": "cpp",
+        "numeric": "cpp",
+        "optional": "cpp",
+        "ostream": "cpp",
+        "ratio": "cpp",
+        "sstream": "cpp",
+        "stdexcept": "cpp",
+        "streambuf": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "system_error": "cpp",
+        "thread": "cpp",
+        "type_traits": "cpp",
+        "tuple": "cpp",
+        "typeinfo": "cpp",
+        "utility": "cpp",
+        "__nullptr": "cpp",
+        "hash_map": "cpp",
+        "bitset": "cpp",
+        "codecvt": "cpp",
+        "list": "cpp",
+        "algorithm": "cpp",
+        "memory_resource": "cpp",
+        "random": "cpp",
+        "iomanip": "cpp",
+        "cinttypes": "cpp",
+        "compare": "cpp",
+        "concepts": "cpp",
+        "ranges": "cpp",
+        "stop_token": "cpp",
+        "__bit_reference": "cpp",
+        "complex": "cpp",
+        "regex": "cpp",
+        "future": "cpp",
+        "cfenv": "cpp",
+        "typeindex": "cpp",
+        "variant": "cpp",
+        "span": "cpp",
+        "numbers": "cpp",
+        "semaphore": "cpp",
+        "*.ipp": "cpp",
+        "format": "cpp",
+        "queue": "cpp",
+        "stack": "cpp",
+        "xhash": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp",
+        "xutility": "cpp",
+        "shared_mutex": "cpp",
+        "valarray": "cpp",
+        "csetjmp": "cpp",
+        "csignal": "cpp",
+        "any": "cpp",
+        "strstream": "cpp",
+        "barrier": "cpp",
+        "charconv": "cpp",
+        "coroutine": "cpp",
+        "forward_list": "cpp",
+        "unordered_set": "cpp",
+        "source_location": "cpp",
+        "rope": "cpp",
+        "slist": "cpp",
+        "latch": "cpp",
+        "scoped_allocator": "cpp",
+        "syncstream": "cpp"
+    },
+    "cSpell.allowCompoundWords": true,
+    "cSpell.enabled": false,
+    "cSpell.validateDirectives": false,
+    "cSpell.words": ["Teradici", "pcoip", "ADPCM", "TERA", "PSDP", "SSIG", "VCHAN", "UVCHAN", "APDU", "Pulseaudio", "CBLK", "AVSYNC"],
+    "cSpell.patterns": [],
+    "cSpell.caseSensitive": false,
+    "cSpell.ignoreRegExpList": ["@\\w+"],
+    //"java.configuration.updateBuildConfiguration": "automatic",
+    "files.maxMemoryForLargeFilesMB": 8192,
+    "auto-scroll.enabled": true
+}
